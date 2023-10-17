@@ -1,8 +1,8 @@
 Package: mypkg
-Title: What the Package Does (One Line, Title Case)
+Title: My First Package Greets a User
 Version: 0.0.0.9000
 Authors@R: 
-    person("Anne", "Harshbarger", , "first.last@example.com", role = c("aut", "cre"),
+    person("Anne", "Harshbarger", , "anne.harshbarger@duke.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
@@ -11,3 +11,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 URL: https://github.com/a-harshbarger/mypkg
 BugReports: https://github.com/a-harshbarger/mypkg/issues
+Imports: 
+    cli
+Depends: 
+    R (>= 2.10)
+LazyData: true

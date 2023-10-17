@@ -15,6 +15,6 @@
 #' greet("Annie")
 #'
 greet <- function(name = "User"){
-  cat("Hello", name, "!", sep = " ")
+  cat("Hello", cli::col_cyan(name), "!", sep = " ")
 }
 
