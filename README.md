@@ -11,7 +11,7 @@ The goal of mypkg is to be my first package
 You can install the development version of mypkg like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+pak::pkg_install(“Aariq/mypkg”)
 ```
 
 ## Example
