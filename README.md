@@ -19,16 +19,20 @@ pak::pkg_install(“a-harshbarger/mypkg”)
 
 See examples below of the function with and without names & baked good requests.
 
-``` r
+``` {r include = TRUE}
 library(mypkg)
 ## basic example code
 
 #Default
 greet()
+```
 
+``` {r include = TRUE}
 #Supply user name argument only
 greet("Annie")
+```
 
+``` {r include = TRUE}
 #Supply name and ask for a recommendation
 gret(name = "Annie", bakedgood = TRUE)
 ```

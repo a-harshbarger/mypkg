@@ -4,16 +4,20 @@
 \alias{greet}
 \title{Greet a user}
 \usage{
-greet(name = "User")
+greet(name = "User", bakedgood = "FALSE")
 }
 \arguments{
 \item{name}{character; name of user}
+
+\item{bakedgood}{logic; true or false}
 }
 \value{
 nothing! just prints a greeting
 }
 \description{
-This function greets a user if you tell it their name.
+This function greets a user if you tell it their name. You can optionally ask it to recommend a random baked good from the baked_goods dataset.
+If you ask for a baked good, it will tell you the amount of an ingredient you'll need to make it and the recipe number for reference.
+Defaults: the function will greet "User" and not include any baking recommendations.
 }
 \examples{
 #Default use
@@ -21,5 +25,9 @@ greet()
 
 #Supply user name
 greet("Annie")
+
+#Supply user name and ask for a baked good recommendation (bakedgood = TRUE)
+greet(name = "Annie", bakedgood = TRUE)
+
 
 }
