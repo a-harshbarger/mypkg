@@ -1,10 +1,10 @@
 Package: mypkg
-Title: My First Package Greets a User
+Title: My First Package Greets a User With Optional Baked Goods
 Version: 0.0.0.9000
 Authors@R: 
     person("Anne", "Harshbarger", , "anne.harshbarger@duke.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Greets a user, and if desired, suggests a baked good to make and the amount of an ingredient needed to make it.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

@@ -7,7 +7,7 @@
 #' @param name character; name of user
 #' @param bakedgood logic; true or false
 #'
-#' @return nothing! just prints a greeting
+#' @return nothing! just prints a greeting, and if you want, a suggestion for a baked good & ingredient needed to make it.
 #' @export
 #'
 #' @examples
