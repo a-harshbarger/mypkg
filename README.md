@@ -5,7 +5,7 @@
 [![R-CMD-check](https://github.com/a-harshbarger/mypkg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/a-harshbarger/mypkg/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of mypkg is to be my first package
+The goal of mypkg is to be my first package! Yay! If you tell it your name and whether you want a recommendation for something to bake, it will greet you and suggest part of a recipe from the baked_goods dataset (included)
 
 ## Installation
 
@@ -15,9 +15,9 @@ You can install the development version of mypkg like so:
 pak::pkg_install(“a-harshbarger/mypkg”)
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+See examples below of the function with and without names & baked good requests.
 
 ``` r
 library(mypkg)
@@ -26,7 +26,10 @@ library(mypkg)
 #Default
 greet()
 
-#Supply user name argument
+#Supply user name argument only
 greet("Annie")
+
+#Supply name and ask for a recommendation
+gret(name = "Annie", bakedgood = TRUE)
 ```
 
