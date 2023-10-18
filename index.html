@@ -62,7 +62,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>The goal of mypkg is to be my first package</p>
+<p>The goal of mypkg is to be my first package! Yay! If you tell it your name and whether you want a recommendation for something to bake, it will greet you and suggest part of a recipe from the baked_goods dataset (included)</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -70,9 +70,9 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pkg_install</span>(“a<span class="sc">-</span>harshbarger<span class="sc">/</span>mypkg”)</span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<p>See examples below of the function with and without names &amp; baked good requests.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/a-harshbarger/mypkg" class="external-link">mypkg</a></span><span class="op">)</span></span>
 <span><span class="co">## basic example code</span></span>
@@ -80,8 +80,11 @@
 <span><span class="co">#Default</span></span>
 <span><span class="fu"><a href="reference/greet.html">greet</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co">#Supply user name argument</span></span>
-<span><span class="fu"><a href="reference/greet.html">greet</a></span><span class="op">(</span><span class="st">"Annie"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="co">#Supply user name argument only</span></span>
+<span><span class="fu"><a href="reference/greet.html">greet</a></span><span class="op">(</span><span class="st">"Annie"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">#Supply name and ask for a recommendation</span></span>
+<span><span class="fu">gret</span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Annie"</span>, bakedgood <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
