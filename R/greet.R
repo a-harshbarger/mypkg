@@ -45,7 +45,7 @@ greet <- function(name = "User", bakedgood = "FALSE", fullrecipe = "FALSE"){
           baked_goods[rowidx,3], ".", " This is recipe ",
           baked_goods[rowidx,2], ".", sep = "")
     part2 <- paste("This recipe also uses the the following ingredients:")
-    part3 <- paste(subset(baked_goods, recipe_id == baked_goods[rowidx,2] & ammount_cups > 0), sep ="/n")
+    part3 <- paste(baked_goods[which(baked_goods$recipe_id == baked_goods[rowidx,2] & baked_goods$ammount_cups > 0),3:4], sep ="/n")
     cat(part1,part2,part3,sep = "/n")
     }
   else{paste("Hello ", cli::col_cyan(name), "!", sep = "")}
