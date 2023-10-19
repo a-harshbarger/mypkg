@@ -20,10 +20,13 @@
 #' #Supply user name and ask for a baked good recommendation (bakedgood = TRUE)
 #' greet(name = "Annie", bakedgood = TRUE)
 #'
+#' #Supply user name, ask for recommendation, and ask for full recipe (fullrecipe = TRUE)
+#' greet(name = "Annie", bakedgood = "TRUE", fullrecipe = "TRUE")
 #'
-greet <- function(name = "User", bakedgood = "FALSE"){
+#'
+greet <- function(name = "User", bakedgood = "FALSE", fullrecipe = "FALSE"){
   paste("Hello ", cli::col_cyan(name), "!", sep = "")
-  if(bakedgood == TRUE){
+  if(bakedgood == TRUE & fullrecipe == FALSE){
     rowidx <- sample(1:length(baked_goods$type), 1)
     paste("Hello ", cli::col_cyan(name), "! You should make a ",
           baked_goods[rowidx,1], " with ",
@@ -31,7 +34,18 @@ greet <- function(name = "User", bakedgood = "FALSE"){
           baked_goods[rowidx,3], ".", " This is recipe ",
           baked_goods[rowidx,2], ".",
           sep ="")
-  }
+    }
+  else if(bakedgood == TRUE & fullrecipe == TRUE){
+    rowidx <- sample(1:length(baked_goods$type), 1)
+    part1 <- paste("Hello ", cli::col_cyan(name), "! You should make a ",
+          baked_goods[rowidx,1], " with ",
+          baked_goods[rowidx,4], " cups of ",
+          baked_goods[rowidx,3], ".", " This is recipe ",
+          baked_goods[rowidx,2], ".", sep = "")
+    part2 <- paste("This recipe also uses the the following ingredients:")
+    part3 <- paste(subset(baked_goods, recipe_id == baked_goods[rowidx,2] & ammount_cups > 0), sep ="/n")
+    cat(part1,part2,part3,sep = "/n")
+    }
   else{paste("Hello ", cli::col_cyan(name), "!", sep = "")}
 }
 
