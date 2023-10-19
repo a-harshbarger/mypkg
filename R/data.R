@@ -8,7 +8,7 @@
 #'   \item{type}{Muffin or cupcake}
 #'   \item{recipe_id}{Unique numeric identifier for recipe}
 #'   \item{ingredient}{Ingredient}
-#'   \item{amount_cups}{Amount of ingredient in cups}
+#'   \item{ammount_cups}{Amount of ingredient in cups}
 #'   ...
 #' }
 #' @source <https://raw.githubusercontent.com/cct-datascience/sortee-rpkg/main/baked_goods_long.csv>
