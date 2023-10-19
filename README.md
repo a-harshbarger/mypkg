@@ -5,7 +5,7 @@
 [![R-CMD-check](https://github.com/a-harshbarger/mypkg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/a-harshbarger/mypkg/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of mypkg is to be my first package! Yay! If you tell it your name and whether you want a recommendation for something to bake, it will greet you and suggest part of a recipe from the baked_goods dataset (included).
+The goal of mypkg is to be my first package! Yay! If you tell it your name and whether you want a recommendation for something to bake, it will greet you and suggest part of a recipe from the baked_goods dataset (included). If you tell it you want the full recipe, it will tell you the amounts of all ingredients in the recipe.
 
 This package is modified from the workshop "Workshop 3: Making your first R package" hosted by Eric R. Scott at the 2023 SORTEE conference.
 

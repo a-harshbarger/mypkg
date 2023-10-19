@@ -2,12 +2,14 @@
 #'
 #'This function greets a user if you tell it their name. You can optionally ask it to recommend a random baked good from the baked_goods dataset.
 #'If you ask for a baked good, it will tell you the amount of an ingredient you'll need to make it and the recipe number for reference.
+#'Super optionally, you can ask for all ingredients from the full recipe.
 #'Defaults: the function will greet "User" and not include any baking recommendations.
 #'
 #' @param name character; name of user
 #' @param bakedgood logic; true or false
+#' @param fullrecipe logic; true or false
 #'
-#' @return nothing! just prints a greeting, and if you want, a suggestion for a baked good & ingredient needed to make it.
+#' @return nothing! just prints a greeting, and if you want, a suggestion for a baked good & ingredient needed to make it. If you're feeling ambitious, ask it for the full recipe
 #' @export
 #'
 #' @examples
