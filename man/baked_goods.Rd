@@ -12,7 +12,7 @@ A data frame with 870 rows and 4 columns:
 \item{type}{Muffin or cupcake}
 \item{recipe_id}{Unique numeric identifier for recipe}
 \item{ingredient}{Ingredient}
-\item{amount_cups}{Amount of ingredient in cups}
+\item{ammount_cups}{Amount of ingredient in cups}
 ...
 }
 }
